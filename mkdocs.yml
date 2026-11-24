@@ -1,0 +1,76 @@
+site_name: Physics Notes
+site_description: QFT 계산부터 연구 최전선까지 — 공부와 연구 기록
+site_url: https://bhj622ck7d-web.github.io/physics-notes/
+repo_url: https://github.com/bhj622ck7d-web/physics-notes
+repo_name: physics-notes
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs          # 상단 탭: 기초 / QFT / 고급 / 연구
+    - navigation.sections
+    - navigation.indexes       # 폴더의 index.md 를 섹션 첫 페이지로
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+
+plugins:
+  - search:
+      lang: [en, ko]
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:       # LaTeX 수식 ($...$, $$...$$)
+      generic: true
+  - pymdownx.emoji:            # :material-atom: 같은 아이콘
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details           # 접히는 블록 (??? note)
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css

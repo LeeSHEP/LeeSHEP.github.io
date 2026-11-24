@@ -1,0 +1,10 @@
+/* 긴 display 수식은 가로 스크롤 */
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 본문 폭 조금 넓게 (수식이 많아서) */
+.md-grid {
+  max-width: 1400px;
+}
