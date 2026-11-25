@@ -78,21 +78,19 @@ nav:
   - Home: index.md
   - Studying:
       - studying/index.md
-      - Foundations:
-          - studying/foundations/index.md
+      # Foundations (studying/foundations/) and Advanced Topics (studying/advanced/)
+      # are hidden until they have real pages — add them back here then.
       - QFT:
           - studying/qft/index.md
           - Canonical Quantization: studying/qft/01-canonical-quantization.md
-      - Advanced Topics:
-          - studying/advanced/index.md
       - Calculations:
           - studying/calculations/index.md
-          - QFT:
-              - studying/calculations/qft/index.md
-              - φ⁴ Theory: studying/calculations/qft/phi4.md
-              - φ³ Theory: studying/calculations/qft/phi3.md
-              - QED: studying/calculations/qft/qed.md
-              - QCD: studying/calculations/qft/qcd.md
+          - Scalar Theories:
+              - φ⁴ Theory: studying/calculations/phi4.md
+              - φ³ Theory: studying/calculations/phi3.md
+          - Gauge Theories:
+              - QED: studying/calculations/qed.md
+              - QCD: studying/calculations/qcd.md
   - Research:
       - research/index.md
       - Paper Notes: research/papers/index.md

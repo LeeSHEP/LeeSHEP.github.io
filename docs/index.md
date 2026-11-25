@@ -2,10 +2,10 @@
 
 Notes on what I study and research — from basic QFT calculations to the research frontier.
 
-- **[Studying](studying/index.md)** — QFT calculations,
-- **[Research](research/index.md)** — Paper notes and ongoing projects (non)
-- **[Blog](blog/index.md)** — (non)
-- **[About](about.md)** — Who I am.
+- **[Studying](studying/index.md)** — Concept notes and full QFT calculations
+- **[Research](research/index.md)** — Paper notes and ongoing projects
+- **[Blog](blog/index.md)** — Dated posts: logs and progress
+- **[About](about.md)** — Who I am
 
 ## Recent updates
 

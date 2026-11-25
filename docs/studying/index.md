@@ -1,8 +1,6 @@
 # Studying
 
-Concept notes organized by topic — what I learn, in the order I learn it.
+Concept notes organized by topic, plus full calculations.
 
-- **[Foundations](foundations/index.md)** — Classical field theory, Lorentz group, relativistic wave equations
 - **[QFT](qft/index.md)** — Canonical quantization, path integrals, Feynman rules, renormalization
-- **[Advanced Topics](advanced/index.md)** — Gauge theories, anomalies, CFT, non-perturbative effects, EFT
-- **[Calculations](calculations/index.md)** — Full calculations: $\phi^4$, $\phi^3$, QED, QCD — Feynman rules to beta functions
+- **[Calculations](calculations/index.md)** — $\phi^4$, $\phi^3$, QED, QCD worked out from Feynman rules to beta functions
