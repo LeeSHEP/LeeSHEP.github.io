@@ -74,3 +74,17 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
+
+# Sidebar / top-tab order. Add new pages here.
+nav:
+  - Home: index.md
+  - Foundations:
+      - foundations/index.md
+  - QFT:
+      - qft/index.md
+      - qft/01-canonical-quantization.md
+  - Advanced Topics:
+      - advanced/index.md
+  - Research:
+      - research/index.md
+  - Tags: tags.md

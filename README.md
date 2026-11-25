@@ -13,7 +13,7 @@ mkdocs serve   # http://127.0.0.1:8000/
 
 ## Writing
 
-- Add a `.md` file under `docs/` and it appears in the sidebar automatically (sorted by filename — use `01-`, `02-` prefixes).
+- Add a `.md` file under `docs/`, then list it under `nav:` in `mkdocs.yml` to place it in the sidebar/tabs.
 - Math: inline `$...$`, display `$$...$$`, numbered `\begin{equation} ... \label{eq:x} \end{equation}`, and reference it in text with `$\eqref{eq:x}$` (wrap it in dollar signs).
 - Physics macros (`\dd`, `\ket{}`, `\slashed{}`, …) live in `docs/javascripts/mathjax.js`.
 - Collapsible blocks: `??? example "Title"`; callouts: `!!! note`, `!!! question`, etc.
