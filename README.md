@@ -8,7 +8,7 @@ QFT 계산부터 연구 최전선까지 — 공부·연구 노트. [MkDocs Mater
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-mkdocs serve   # http://127.0.0.1:8000/physics-notes/
+mkdocs serve   # http://127.0.0.1:8000/
 ```
 
 ## 글 쓰기

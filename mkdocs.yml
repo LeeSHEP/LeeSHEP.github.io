@@ -1,8 +1,8 @@
 site_name: Physics Notes
 site_description: QFT 계산부터 연구 최전선까지 — 공부와 연구 기록
-site_url: https://bhj622ck7d-web.github.io/physics-notes/
-repo_url: https://github.com/bhj622ck7d-web/physics-notes
-repo_name: physics-notes
+site_url: https://leeshep.github.io/
+repo_url: https://github.com/LeeSHEP/LeeSHEP.github.io
+repo_name: LeeSHEP.github.io
 edit_uri: edit/main/docs/
 
 theme:
