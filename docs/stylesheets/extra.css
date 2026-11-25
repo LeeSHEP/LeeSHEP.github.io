@@ -1,3 +1,54 @@
+/* ---------- Ivory theme (light) ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #fbf8f1;              /* page: ivory */
+  --md-default-fg-color: rgba(52, 43, 32, 0.92);
+  --md-default-fg-color--light: rgba(52, 43, 32, 0.62);
+  --md-default-fg-color--lighter: rgba(52, 43, 32, 0.32);
+  --md-default-fg-color--lightest: rgba(52, 43, 32, 0.08);
+
+  --md-primary-fg-color: #f1ebdd;              /* header: warm beige */
+  --md-primary-fg-color--light: #f6f1e6;
+  --md-primary-fg-color--dark: #e6dcc8;
+  --md-primary-bg-color: #3b3226;              /* header text */
+  --md-primary-bg-color--light: rgba(59, 50, 38, 0.6);
+
+  --md-accent-fg-color: #a0652b;               /* hover: warm brown */
+  --md-accent-fg-color--transparent: rgba(160, 101, 43, 0.1);
+
+  --md-typeset-a-color: #8a5a2b;               /* links */
+  --md-code-bg-color: #f3eee2;
+  --md-footer-bg-color: #efe8d9;
+  --md-footer-bg-color--dark: #e8e0ce;
+  --md-footer-fg-color: #3b3226;
+  --md-footer-fg-color--light: rgba(59, 50, 38, 0.7);
+  --md-footer-fg-color--lighter: rgba(59, 50, 38, 0.45);
+}
+
+/* thin divider under the beige header */
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs {
+  border-bottom: 1px solid #e3d9c4;
+}
+[data-md-color-scheme="default"] .md-header--shadow {
+  box-shadow: none;
+}
+
+/* ---------- Warm dark theme (no blue tint) ---------- */
+[data-md-color-scheme="slate"] {
+  --md-hue: 35;                                /* warm instead of blue */
+  --md-default-bg-color: #1f1c18;
+  --md-primary-fg-color: #2a2620;
+  --md-primary-fg-color--light: #332e27;
+  --md-primary-fg-color--dark: #1a1814;
+  --md-primary-bg-color: #ece4d4;
+  --md-primary-bg-color--light: rgba(236, 228, 212, 0.6);
+  --md-accent-fg-color: #d9a66b;
+  --md-accent-fg-color--transparent: rgba(217, 166, 107, 0.1);
+  --md-typeset-a-color: #d9a66b;
+  --md-footer-bg-color: #1a1814;
+  --md-footer-bg-color--dark: #151310;
+}
+
 /* horizontal scroll for long display equations */
 .md-typeset .arithmatex {
   overflow-x: auto;
