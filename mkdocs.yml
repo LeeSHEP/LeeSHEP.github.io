@@ -91,14 +91,14 @@ nav:
           - Canonical Quantization: studying/qft/01-canonical-quantization.md
       - Advanced Topics:
           - studying/advanced/index.md
-  - Calculations:
-      - calculations/index.md
-      - QFT:
-          - calculations/qft/index.md
-          - φ⁴ Theory: calculations/qft/phi4.md
-          - φ³ Theory: calculations/qft/phi3.md
-          - QED: calculations/qft/qed.md
-          - QCD: calculations/qft/qcd.md
+      - Calculations:
+          - studying/calculations/index.md
+          - QFT:
+              - studying/calculations/qft/index.md
+              - φ⁴ Theory: studying/calculations/qft/phi4.md
+              - φ³ Theory: studying/calculations/qft/phi3.md
+              - QED: studying/calculations/qft/qed.md
+              - QCD: studying/calculations/qft/qcd.md
   - Research:
       - research/index.md
       - Paper Notes: research/papers/index.md

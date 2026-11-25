@@ -16,4 +16,8 @@ Concept notes organized by topic — what I learn, in the order I learn it.
 
     Gauge theories, anomalies, CFT, non-perturbative effects, EFT
 
+-   :material-calculator-variant: **[Calculations](calculations/index.md)**
+
+    Full calculations: $\phi^4$, $\phi^3$, QED, QCD — Feynman rules to beta functions
+
 </div>
