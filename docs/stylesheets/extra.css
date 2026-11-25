@@ -1,61 +1,156 @@
-/* ---------- Ivory theme (light) ---------- */
+/* =========================================================
+   Minimal theme — plain page, dark text, one accent color.
+   ========================================================= */
+
+/* ---------- Fonts & reading width ---------- */
+:root {
+  --md-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", Helvetica, Arial, sans-serif;
+  --md-code-font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* comfortable line length (~75 characters) */
+.md-content {
+  max-width: 44rem;
+}
+.md-main__inner {
+  max-width: 64rem;
+}
+
+.md-typeset {
+  font-size: 0.86rem;
+  line-height: 1.75;
+}
+
+/* headings: dark and solid instead of light grey */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--md-default-fg-color);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+.md-typeset h1 { font-size: 1.7em; margin-bottom: 0.8em; }
+.md-typeset h2 { font-size: 1.3em; margin-top: 2em; }
+.md-typeset h3 { font-size: 1.1em; }
+
+/* links: underlined, no color noise */
+.md-typeset a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Light ---------- */
 [data-md-color-scheme="default"] {
-  --md-default-bg-color: #fbf8f1;              /* page: ivory */
-  --md-default-fg-color: rgba(52, 43, 32, 0.92);
-  --md-default-fg-color--light: rgba(52, 43, 32, 0.62);
-  --md-default-fg-color--lighter: rgba(52, 43, 32, 0.32);
-  --md-default-fg-color--lightest: rgba(52, 43, 32, 0.08);
+  --md-default-bg-color: #fdfcfa;
+  --md-default-fg-color: #1f1f1f;
+  --md-default-fg-color--light: #555;
+  --md-default-fg-color--lighter: #999;
+  --md-default-fg-color--lightest: #ececec;
 
-  --md-primary-fg-color: #f1ebdd;              /* header: warm beige */
-  --md-primary-fg-color--light: #f6f1e6;
-  --md-primary-fg-color--dark: #e6dcc8;
-  --md-primary-bg-color: #3b3226;              /* header text */
-  --md-primary-bg-color--light: rgba(59, 50, 38, 0.6);
+  --md-primary-fg-color: #fdfcfa;           /* header = page background */
+  --md-primary-fg-color--light: #fdfcfa;
+  --md-primary-fg-color--dark: #fdfcfa;
+  --md-primary-bg-color: #1f1f1f;           /* header text */
+  --md-primary-bg-color--light: #666;
 
-  --md-accent-fg-color: #a0652b;               /* hover: warm brown */
-  --md-accent-fg-color--transparent: rgba(160, 101, 43, 0.1);
+  --md-accent-fg-color: #8a4b17;
+  --md-accent-fg-color--transparent: rgba(138, 75, 23, 0.08);
+  --md-typeset-a-color: #8a4b17;
 
-  --md-typeset-a-color: #8a5a2b;               /* links */
-  --md-code-bg-color: #f3eee2;
-  --md-footer-bg-color: #efe8d9;
-  --md-footer-bg-color--dark: #e8e0ce;
-  --md-footer-fg-color: #3b3226;
-  --md-footer-fg-color--light: rgba(59, 50, 38, 0.7);
-  --md-footer-fg-color--lighter: rgba(59, 50, 38, 0.45);
+  --md-code-bg-color: #f4f2ee;
+  --md-footer-bg-color: #fdfcfa;
+  --md-footer-bg-color--dark: #fdfcfa;
+  --md-footer-fg-color: #555;
+  --md-footer-fg-color--light: #777;
+  --md-footer-fg-color--lighter: #999;
 }
 
-/* thin divider under the beige header */
-[data-md-color-scheme="default"] .md-header,
-[data-md-color-scheme="default"] .md-tabs {
-  border-bottom: 1px solid #e3d9c4;
-}
-[data-md-color-scheme="default"] .md-header--shadow {
-  box-shadow: none;
-}
-
-/* ---------- Warm dark theme (no blue tint) ---------- */
+/* ---------- Dark ---------- */
 [data-md-color-scheme="slate"] {
-  --md-hue: 35;                                /* warm instead of blue */
-  --md-default-bg-color: #1f1c18;
-  --md-primary-fg-color: #2a2620;
-  --md-primary-fg-color--light: #332e27;
-  --md-primary-fg-color--dark: #1a1814;
-  --md-primary-bg-color: #ece4d4;
-  --md-primary-bg-color--light: rgba(236, 228, 212, 0.6);
+  --md-hue: 35;
+  --md-default-bg-color: #1c1b19;
+  --md-default-fg-color: #e8e6e1;
+  --md-default-fg-color--light: #b5b2ab;
+  --md-default-fg-color--lighter: #7d7a74;
+  --md-default-fg-color--lightest: #2e2c29;
+
+  --md-primary-fg-color: #1c1b19;
+  --md-primary-fg-color--light: #1c1b19;
+  --md-primary-fg-color--dark: #1c1b19;
+  --md-primary-bg-color: #e8e6e1;
+  --md-primary-bg-color--light: #a9a6a0;
+
   --md-accent-fg-color: #d9a66b;
   --md-accent-fg-color--transparent: rgba(217, 166, 107, 0.1);
   --md-typeset-a-color: #d9a66b;
-  --md-footer-bg-color: #1a1814;
-  --md-footer-bg-color--dark: #151310;
+
+  --md-code-bg-color: #262522;
+  --md-footer-bg-color: #1c1b19;
+  --md-footer-bg-color--dark: #1c1b19;
 }
 
-/* horizontal scroll for long display equations */
+/* ---------- Header & tabs: flat, one hairline ---------- */
+.md-header,
+.md-header--shadow {
+  box-shadow: none;
+}
+.md-tabs {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-tabs__link {
+  font-size: 0.75rem;
+  opacity: 0.65;
+}
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* search box: plain outline instead of a filled block */
+.md-search__form {
+  background-color: transparent;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+}
+.md-search__input::placeholder,
+.md-search__icon {
+  color: var(--md-default-fg-color--light);
+}
+
+/* ---------- Sidebar ---------- */
+.md-nav {
+  font-size: 0.72rem;
+}
+.md-nav__item--section > .md-nav__link {
+  color: var(--md-default-fg-color);
+  font-weight: 650;
+}
+
+/* ---------- Callout boxes: quiet ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.82rem;
+  box-shadow: none;
+  border-width: 0 0 0 3px;
+  border-radius: 0;
+}
+
+/* tags: small and grey */
+.md-typeset .md-tag {
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.md-typeset .headerlink {
+  text-decoration: none;
+}
+
+/* ---------- Math ---------- */
 .md-typeset .arithmatex {
   overflow-x: auto;
   overflow-y: hidden;
-}
-
-/* slightly wider content area for equations */
-.md-grid {
-  max-width: 1400px;
 }

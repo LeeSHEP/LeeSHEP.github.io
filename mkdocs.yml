@@ -9,16 +9,12 @@ theme:
   name: material
   language: en
   features:
-    - navigation.tabs          # top tabs: Foundations / QFT / Advanced / Research
+    - navigation.tabs          # top tabs = big categories
     - navigation.sections
     - navigation.indexes       # a folder's index.md becomes the section landing page
-    - navigation.top
-    - navigation.footer
-    - toc.follow
-    - search.suggest
+    - toc.integrate            # page outline goes in the left sidebar (no right column)
     - search.highlight
     - content.code.copy
-    - content.action.edit
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -34,9 +30,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  font:
-    text: Inter
-    code: JetBrains Mono
+  font: false                  # use the system font (fast, very readable)
 
 plugins:
   - search:
