@@ -93,8 +93,8 @@ nav:
               - QCD: studying/calculations/qcd.md
   - Research:
       - research/index.md
-      - Paper Notes: research/papers/index.md
-      - Projects: research/projects/index.md
+      # Paper Notes (research/papers/) and Projects (research/projects/)
+      # are hidden until they have real pages — add them back here then.
   - Blog:
       - blog/index.md
   - About: about.md
