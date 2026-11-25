@@ -1,8 +1,8 @@
 # Site settings for build.py
 
-title = "Physics Notes"
+title = "LeeSHEP's Notes"
 author = "LeeSHEP"
-intro = "Notes on what I study and research — from basic QFT calculations to the research frontier."
+intro = "Just for my records!"
 repo = "https://github.com/LeeSHEP/LeeSHEP.github.io"
 
 [[links]]
