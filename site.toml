@@ -1,0 +1,24 @@
+# Site settings for build.py
+
+title = "Physics Notes"
+author = "LeeSHEP"
+intro = "Notes on what I study and research — from basic QFT calculations to the research frontier."
+repo = "https://github.com/LeeSHEP/LeeSHEP.github.io"
+
+[[links]]
+name = "GitHub"
+url = "https://github.com/LeeSHEP"
+
+# Sections shown on the page, in this order.
+# dir = folder under notes/. Sections with no published notes are hidden.
+[[sections]]
+dir = "qft"
+name = "QFT"
+
+[[sections]]
+dir = "calculations"
+name = "Calculations"
+
+[[sections]]
+dir = "research"
+name = "Research"

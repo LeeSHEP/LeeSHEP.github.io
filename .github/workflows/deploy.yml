@@ -20,16 +20,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # full history, for "last updated" dates
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
-      - run: pip install -r requirements.txt
-      - run: mkdocs build --strict
+      - uses: teatimeguest/setup-texlive-action@v3
+        with:
+          cache: true
+          packages: >-
+            scheme-small
+            latexmk
+            physics
+            carlisle
+      - run: python build.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
   deploy:
     needs: build
