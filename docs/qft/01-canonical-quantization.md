@@ -4,23 +4,23 @@ tags:
   - scalar field
 ---
 
-# Scalar 장의 정준양자화
+# Canonical Quantization of the Scalar Field
 
-!!! info "이 페이지는 템플릿 예시입니다"
-    수식 번호, 참조, 접는 블록 등 사이트에서 쓸 수 있는 문법을 보여주기 위한 노트입니다. 실제 내용으로 바꿔 쓰세요.
+!!! info "This page is a template example"
+    This note shows the syntax available on this site: equation numbering, references, collapsible blocks, and so on. Replace it with real content.
 
 ## Lagrangian
 
-실수 scalar 장의 Lagrangian 밀도는
+The Lagrangian density of a real scalar field is
 
 \begin{equation}
 \Lag = \frac{1}{2}\partial_\mu\phi\,\partial^\mu\phi - \frac{1}{2}m^2\phi^2 .
 \label{eq:lag}
 \end{equation}
 
-Euler–Lagrange 방정식을 $\eqref{eq:lag}$에 적용하면 Klein–Gordon 방정식 $(\partial^2 + m^2)\phi = 0$ 을 얻는다.
+Applying the Euler–Lagrange equation to $\eqref{eq:lag}$ gives the Klein–Gordon equation $(\partial^2 + m^2)\phi = 0$.
 
-## 모드 전개
+## Mode expansion
 
 $$
 \phi(x) = \int \frac{\dd^3 p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}
@@ -28,15 +28,15 @@ $$
 \qquad E_p = \sqrt{\mathbf p^2 + m^2}
 $$
 
-생성·소멸 연산자의 교환관계:
+The creation and annihilation operators satisfy
 
 \begin{equation}
 [a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\,\delta^{(3)}(\mathbf p - \mathbf q).
 \label{eq:ccr}
 \end{equation}
 
-??? example "유도: $[\phi(\mathbf x), \pi(\mathbf y)] = \ii\delta^{(3)}(\mathbf x - \mathbf y)$ 확인 (클릭해서 펼치기)"
-    $\eqref{eq:ccr}$를 대입하고 $\pi = \dot\phi$ 를 쓰면 …
+??? example "Derivation: checking $[\phi(\mathbf x), \pi(\mathbf y)] = \ii\delta^{(3)}(\mathbf x - \mathbf y)$ (click to expand)"
+    Substituting $\eqref{eq:ccr}$ and using $\pi = \dot\phi$, …
 
     $$
     [\phi(\mathbf x), \pi(\mathbf y)]
@@ -44,13 +44,13 @@ $$
     = \ii\,\delta^{(3)}(\mathbf x-\mathbf y).
     $$
 
-!!! note "Convention"
-    metric은 $(+,-,-,-)$, Peskin & Schroeder 관례를 따름.
+!!! note "Conventions"
+    Metric signature $(+,-,-,-)$, following Peskin & Schroeder.
 
-!!! question "남은 질문"
-    - 진공 에너지의 무한대는 normal ordering 외에 어떻게 이해할 수 있나?
+!!! question "Open questions"
+    - Beyond normal ordering, how should we understand the infinite vacuum energy?
 
-## 참고문헌
+## References
 
-- Peskin & Schroeder, *An Introduction to QFT*, Ch. 2
+- Peskin & Schroeder, *An Introduction to Quantum Field Theory*, Ch. 2
 - Srednicki, *Quantum Field Theory*, Ch. 3

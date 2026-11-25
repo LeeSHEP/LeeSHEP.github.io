@@ -1,7 +1,7 @@
-# 고급 주제
+# Advanced Topics
 
-- [ ] 비가환 게이지 이론과 BRST
-- [ ] 아노말리
-- [ ] 등각장론 (CFT)
-- [ ] Instanton과 비섭동 효과
-- [ ] 유효장론 (EFT)
+- [ ] Non-abelian gauge theory and BRST
+- [ ] Anomalies
+- [ ] Conformal field theory (CFT)
+- [ ] Instantons and non-perturbative effects
+- [ ] Effective field theory (EFT)

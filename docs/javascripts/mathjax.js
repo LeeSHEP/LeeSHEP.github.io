@@ -4,9 +4,9 @@ window.MathJax = {
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,
     processEnvironments: true,
-    tags: "ams", // \begin{equation} 에 자동 번호, \label / \eqref 사용 가능
+    tags: "ams", // auto-number \begin{equation}; use \label / \eqref
     macros: {
-      // 자주 쓰는 물리 매크로 — 필요하면 여기에 추가
+      // common physics macros — add more here
       dd: "\\mathrm{d}",
       ii: "\\mathrm{i}",
       tr: "\\operatorname{tr}",
@@ -25,7 +25,7 @@ window.MathJax = {
   },
 };
 
-// 페이지 이동(instant navigation) 시에도 수식 다시 렌더링
+// re-render math after instant page navigation
 document$.subscribe(() => {
   MathJax.startup.output.clearCache();
   MathJax.typesetClear();

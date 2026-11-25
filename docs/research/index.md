@@ -1,9 +1,9 @@
-# 연구
+# Research
 
-## 논문 노트
+## Paper notes
 
-읽은 논문 정리. 파일 이름 예: `papers/2026-arxiv-XXXX.XXXXX.md`
+Summaries of papers I've read. Example filename: `papers/2026-arxiv-XXXX.XXXXX.md`
 
-## 진행 중인 연구
+## Ongoing research
 
-연구 로그, 계산 기록, 아이디어.
+Research logs, calculations, and ideas.

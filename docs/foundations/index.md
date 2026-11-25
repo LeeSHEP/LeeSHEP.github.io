@@ -1,8 +1,8 @@
-# 기초
+# Foundations
 
-QFT로 들어가기 전에 필요한 것들.
+What you need before diving into QFT.
 
-- [ ] 고전장론: Lagrangian, Noether 정리
-- [ ] Lorentz 군과 표현론
-- [ ] Klein–Gordon, Dirac 방정식
-- [ ] 그린 함수와 복소해석
+- [ ] Classical field theory: Lagrangians, Noether's theorem
+- [ ] The Lorentz group and its representations
+- [ ] Klein–Gordon and Dirac equations
+- [ ] Green's functions and complex analysis

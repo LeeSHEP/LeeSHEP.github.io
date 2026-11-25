@@ -1,5 +1,5 @@
 site_name: Physics Notes
-site_description: QFT 계산부터 연구 최전선까지 — 공부와 연구 기록
+site_description: From QFT calculations to the research frontier — study and research notes
 site_url: https://leeshep.github.io/
 repo_url: https://github.com/LeeSHEP/LeeSHEP.github.io
 repo_name: LeeSHEP.github.io
@@ -7,11 +7,11 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  language: ko
+  language: en
   features:
-    - navigation.tabs          # 상단 탭: 기초 / QFT / 고급 / 연구
+    - navigation.tabs          # top tabs: Foundations / QFT / Advanced / Research
     - navigation.sections
-    - navigation.indexes       # 폴더의 index.md 를 섹션 첫 페이지로
+    - navigation.indexes       # a folder's index.md becomes the section landing page
     - navigation.top
     - navigation.footer
     - toc.follow
@@ -26,21 +26,21 @@ theme:
       accent: deep purple
       toggle:
         icon: material/weather-night
-        name: 다크 모드
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: deep purple
       toggle:
         icon: material/weather-sunny
-        name: 라이트 모드
+        name: Switch to light mode
   font:
-    text: Noto Sans KR
+    text: Inter
     code: JetBrains Mono
 
 plugins:
   - search:
-      lang: [en, ko]
+      lang: en
   - tags
 
 markdown_extensions:
@@ -53,12 +53,12 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-  - pymdownx.arithmatex:       # LaTeX 수식 ($...$, $$...$$)
+  - pymdownx.arithmatex:       # LaTeX math ($...$, $$...$$)
       generic: true
-  - pymdownx.emoji:            # :material-atom: 같은 아이콘
+  - pymdownx.emoji:            # icons like :material-atom:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.details           # 접히는 블록 (??? note)
+  - pymdownx.details           # collapsible blocks (??? note)
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
