@@ -24,14 +24,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - uses: teatimeguest/setup-texlive-action@v3
-        with:
-          cache: true
-          packages: >-
-            scheme-small
-            latexmk
-            physics
-            carlisle
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends \
+            latexmk texlive-latex-base texlive-latex-recommended texlive-science
       - run: python build.py
       - uses: actions/upload-pages-artifact@v3
         with:
