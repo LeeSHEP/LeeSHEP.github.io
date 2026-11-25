@@ -1,9 +1,13 @@
 # Research
 
-## Paper notes
+<div class="grid cards" markdown>
 
-Summaries of papers I've read. Example filename: `papers/2026-arxiv-XXXX.XXXXX.md`
+-   :material-file-document-multiple: **[Paper Notes](papers/index.md)**
 
-## Ongoing research
+    Summaries and comments on papers I've read
 
-Research logs, calculations, and ideas.
+-   :material-flask: **[Projects](projects/index.md)**
+
+    Ongoing research: logs, calculations, ideas
+
+</div>

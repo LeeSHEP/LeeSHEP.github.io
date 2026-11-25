@@ -13,11 +13,12 @@ mkdocs serve   # http://127.0.0.1:8000/
 
 ## Writing
 
-- Add a `.md` file under `docs/`, then list it under `nav:` in `mkdocs.yml` to place it in the sidebar/tabs.
+- Content lives in `docs/studying/`, `docs/calculations/`, `docs/research/`; add a `.md` file there, then list it under `nav:` in `mkdocs.yml`.
+- Blog posts: add `docs/blog/posts/YYYY-MM-DD-slug.md` with `date:` (and optional `categories:`) in the front matter — no `nav:` entry needed.
 - Math: inline `$...$`, display `$$...$$`, numbered `\begin{equation} ... \label{eq:x} \end{equation}`, and reference it in text with `$\eqref{eq:x}$` (wrap it in dollar signs).
 - Physics macros (`\dd`, `\ket{}`, `\slashed{}`, …) live in `docs/javascripts/mathjax.js`.
 - Collapsible blocks: `??? example "Title"`; callouts: `!!! note`, `!!! question`, etc.
-- See `docs/qft/01-canonical-quantization.md` for an example.
+- See `docs/studying/qft/01-canonical-quantization.md` for an example.
 
 ## Deployment
 

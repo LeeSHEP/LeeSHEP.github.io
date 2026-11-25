@@ -42,6 +42,9 @@ plugins:
   - search:
       lang: en
   - tags
+  - blog:
+      blog_dir: blog
+      post_url_format: "{date}/{slug}"
 
 markdown_extensions:
   - abbr
@@ -76,15 +79,30 @@ extra_css:
   - stylesheets/extra.css
 
 # Sidebar / top-tab order. Add new pages here.
+# Top tabs = big categories; nested lists = subcategories in the sidebar.
 nav:
   - Home: index.md
-  - Foundations:
-      - foundations/index.md
-  - QFT:
-      - qft/index.md
-      - qft/01-canonical-quantization.md
-  - Advanced Topics:
-      - advanced/index.md
+  - Studying:
+      - studying/index.md
+      - Foundations:
+          - studying/foundations/index.md
+      - QFT:
+          - studying/qft/index.md
+          - Canonical Quantization: studying/qft/01-canonical-quantization.md
+      - Advanced Topics:
+          - studying/advanced/index.md
+  - Calculations:
+      - calculations/index.md
+      - QFT:
+          - calculations/qft/index.md
+          - φ⁴ Theory: calculations/qft/phi4.md
+          - φ³ Theory: calculations/qft/phi3.md
+          - QED: calculations/qft/qed.md
+          - QCD: calculations/qft/qcd.md
   - Research:
       - research/index.md
-  - Tags: tags.md
+      - Paper Notes: research/papers/index.md
+      - Projects: research/projects/index.md
+  - Blog:
+      - blog/index.md
+  - About: about.md
