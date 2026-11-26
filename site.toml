@@ -13,11 +13,11 @@ url = "https://github.com/LeeSHEP"
 # dir = folder under notes/. Sections with no published notes are hidden.
 [[sections]]
 dir = "qft"
-name = "QFT"
+name = "Perturbative QFT"
 
 [[sections]]
-dir = "calculations"
-name = "Calculations"
+dir = "susy"
+name = "Susy"
 
 [[sections]]
 dir = "research"
